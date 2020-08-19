@@ -24,6 +24,6 @@ class SessionsController < ApplicationController
 
     response = conn.get('/user')
     data = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
+    # require 'pry'; binding.pry
   end
 end
